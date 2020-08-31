@@ -66,6 +66,6 @@ Notice that when you polygon is ended, the property canDraw will be set to false
 Zoomify allow you to call an event called `drawn` when a polygon has been drawn.
 The only thing you have to do is to add an event listener :
 ```js
-photo.addEventListener('drawn', () => { alert('Geometry has been drawn.'); });
+document.querySelector('zoomify-img').addEventListener('drawn', () => { alert('Geometry has been drawn.'); });
 ```
 Do not hesitate to use this event to perform some tasks after drawing a polygon.
