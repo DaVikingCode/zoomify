@@ -1,0 +1,14 @@
+body {
+    margin: 60px;
+}
+
+.zoomable-image {
+    display: block;
+    width: 555px;
+    height: 320px;
+
+    background-color: #989898;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}

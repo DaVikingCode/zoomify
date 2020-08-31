@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Test Zoom</title>
+
+        <link rel="stylesheet" href="app.css">
+        <script src="../src/app.min.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Example Zoomify</h1>
+        <zoomify-img id="photo" class="zoomable-image"></zoomify-img>
+
+        <script>
+            window.addEventListener('load', () => {
+                let img = new Image();
+                img.addEventListener('load', () => {
+                    document.querySelector('#photo').init(img.width, img.height);
+                    img = null;
+                });
+                img.src = '../assets/daisy.jpg';
+                document.querySelector('#photo').style.backgroundImage = "url('../assets/daisy.jpg')";
+            });
+        </script>
+    </body>
+</html>
