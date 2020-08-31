@@ -11,17 +11,33 @@
 
     <body>
         <h1>Example Zoomify</h1>
-        <zoomify-img id="photo" class="zoomable-image"></zoomify-img>
+
+        <!-- Container needed to make the component work well -->
+        <div class="container">
+          <zoomify-img id="photo" class="zoomable-image"></zoomify-img>
+        </div>
+
+        <button id="button">Start drawing</button>
 
         <script>
+            let photo = document.querySelector('#photo');
+
+            function startDrawing() {
+              photo.canDraw = true;
+            }
+
             window.addEventListener('load', () => {
                 let img = new Image();
+
                 img.addEventListener('load', () => {
                     document.querySelector('#photo').init(img.width, img.height);
                     img = null;
                 });
                 img.src = '../assets/daisy.jpg';
-                document.querySelector('#photo').style.backgroundImage = "url('../assets/daisy.jpg')";
+                photo.style.backgroundImage = "url('../assets/daisy.jpg')";
+
+                document.getElementById('button').addEventListener('click', startDrawing);
+                photo.addEventListener('drawn', () => { alert('Geometry has been drawn.'); });
             });
         </script>
     </body>
