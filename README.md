@@ -1,0 +1,2 @@
+# zoomify
+Javascript custom element
