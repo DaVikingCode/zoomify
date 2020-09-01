@@ -1,5 +1,5 @@
 {
-    "name": "zoomify-js",
+    "name": "@DaVikingCode/zoomify",
     "version": "1.0.0",
     "description": "Zoom and draw on image (compatible with touchscreens)",
     "main": "src/app.min.js",
