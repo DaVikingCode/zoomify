@@ -474,6 +474,8 @@ customElements.define('zoomify-img',
                         this.hasMoved = true;
                     }
 
+                    console.log("drawing on touchscreen");
+
                     // Update current drag position
                     this.dragX = this.touchCenterX;
                     this.dragY = this.touchCenterY;
