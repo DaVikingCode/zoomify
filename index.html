@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Test Zoom</title>
+
+        <link rel="stylesheet" href="app.css">
+        <script src="../src/app.min.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Example Zoomify</h1>
+
+        <!-- Container needed to make the component work well -->
+        <div class="container">
+          <zoomify-img id="photo" class="zoomable-image"></zoomify-img>
+        </div>
+
+        <button id="button">Start drawing</button>
+
+        <script>
+            let photo = document.querySelector('#photo');
+
+            function startDrawing() {
+              photo.canDraw = true;
+            }
+
+            window.addEventListener('load', () => {
+                let img = new Image();
+
+                img.addEventListener('load', () => {
+                    document.querySelector('#photo').init(img.width, img.height);
+                    img = null;
+                });
+                img.src = '../assets/daisy.jpg';
+                photo.style.backgroundImage = "url('../assets/daisy.jpg')";
+
+                document.getElementById('button').addEventListener('click', startDrawing);
+                photo.addEventListener('drawn', () => { alert('Geometry has been drawn.'); });
+            });
+        </script>
+    </body>
+</html>
