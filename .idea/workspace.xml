@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c6ec61f-dede-4413-8046-73649b276cbe" name="Default Changelist" comment="" />
+    <list default="true" id="8c6ec61f-dede-4413-8046-73649b276cbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +11,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ga6ArCsinXGKpixSbK5yhbvo9x" />
   <component name="ProjectViewState">
@@ -18,7 +23,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Draw" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -41,7 +46,8 @@
       <workItem from="1598455937685" duration="2312000" />
       <workItem from="1598512209696" duration="11643000" />
       <workItem from="1598598535980" duration="15000" />
-      <workItem from="1598888600087" duration="631000" />
+      <workItem from="1598888600087" duration="762000" />
+      <workItem from="1598963259946" duration="37000" />
     </task>
     <servers />
   </component>
