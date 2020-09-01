@@ -17,7 +17,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DaVikingCode/zoomify.git"
+        "url": "git://github.com/DaVikingCode/zoomify.git"
     },
     "keywords": [
         "zoom",
