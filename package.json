@@ -1,0 +1,35 @@
+{
+    "name": "zoomify-js",
+    "version": "1.0.0",
+    "description": "Zoom and draw on image (compatible with touchscreens)",
+    "main": "src/app.min.js",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
+    "files": [
+        "src"
+    ],
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DaVikingCode/zoomify.git"
+    },
+    "keywords": [
+        "zoom",
+        "zoom-images",
+        "images",
+        "geometry",
+        "polygons"
+    ],
+    "author": "akaadream@DaVikingCode",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DaVikingCode/zoomify/issues"
+    },
+    "homepage": "https://github.com/DaVikingCode/zoomify#readme"
+}
