@@ -1,7 +1,8 @@
 /*
- * v1.0 - Zoomify - 2020
- * Made by Akadream
- * Please credit me if your are using this library
+ *
+ * MIT License
+ *
+ * Copyright (c) 2020 akaadream @ Da Viking Code
  *
  */
 
@@ -276,6 +277,7 @@ customElements.define('zoomify-img',
                 this.scaling = false;
             }
             else if (this.dragging) {
+                this.photoClicked(event);
                 this.endDrag(event);
             }
             else event.preventDefault();
@@ -440,9 +442,23 @@ customElements.define('zoomify-img',
             // Get the canvas element
             let canvas = document.getElementById('canvas');
 
-            // Get current coordinates
-            let x = event.pageX - this.rect.x - this.x;
-            let y = event.pageY - this.rect.y - this.y;
+            // Initialize coordinates
+            let x = 0;
+            let y = 0;
+
+            // Detect touchscreen usage
+            if (this.touchCenterX !== 0 && this.touchCenterY !== 0)
+            {
+                // Get current coordinates
+                x = this.touchCenterX - this.rect.x - this.x;
+                y = this.touchCenterY - this.rect.y - this.y;
+            }
+            else
+            {
+                // Get current coordinates
+                x = event.pageX - this.rect.x - this.x;
+                y = event.pageY - this.rect.y - this.y;
+            }
 
             // Calculate ratios
             let ratioZoom = this.height / this.defaultHeight;
@@ -473,8 +489,6 @@ customElements.define('zoomify-img',
                     if (Math.abs(this.touchCenterX - this.startDragX) >= 20 || Math.abs(this.touchCenterY - this.startDragY) >= 20) {
                         this.hasMoved = true;
                     }
-
-                    console.log("drawing on touchscreen");
 
                     // Update current drag position
                     this.dragX = this.touchCenterX;
