@@ -4,8 +4,10 @@ Feel free to use this library, report all the bugs you can find and if i have th
 Thanks to credit my work if you are using this library :)
 
 ## Installation
-A future npm package will be deployed to make the library easier to use.
-For the moment, you should use Zoomify by copying the `src/zoomify.min.js` and paste the content into a new js file in your project.
+You can use NPM to install zoomify into your project :
+```bash
+npm install @davikingcode/zoomify@1.0.0
+```
 
 ## Usage
 Follow these simples steps to use Zoomify :
