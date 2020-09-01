@@ -5,8 +5,8 @@
 
         <title>Test Zoom</title>
 
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/DaVikingCode/zoomify/master/test/app.css">
-        <script src="https://raw.githubusercontent.com/DaVikingCode/zoomify/master/src/app.min.js" defer></script>
+        <link rel="stylesheet" href="app.css">
+        <script src="app.min.js" defer></script>
     </head>
 
     <body>
@@ -33,8 +33,8 @@
                     document.querySelector('#photo').init(img.width, img.height);
                     img = null;
                 });
-                img.src = 'https://raw.githubusercontent.com/DaVikingCode/zoomify/master/assets/lumo.jpeg';
-                photo.style.backgroundImage = "url('https://raw.githubusercontent.com/DaVikingCode/zoomify/master/assets/lumo.jpeg')";
+                img.src = 'lumo.jpeg';
+                photo.style.backgroundImage = "url('lumo.jpeg')";
 
                 document.getElementById('button').addEventListener('click', startDrawing);
                 photo.addEventListener('drawn', () => { alert('Geometry has been drawn.'); });
