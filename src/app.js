@@ -1,3 +1,10 @@
+/*
+ * v1.0 - Zoomify - 2020
+ * Made by Akadream
+ * Please credit me if your are using this library
+ *
+ */
+
 /**
  * Point class
  */
